@@ -1,0 +1,83 @@
+
+header {
+    background: linear-gradient(45deg, #1e90ff, #00ced1); 
+    color: #fff;
+    padding: 20px 10px; 
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 700; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+nav ul li {
+    margin: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; 
+    transform: scale(1.1); 
+}
+
+.hero {
+    margin-top: 20px; 
+    padding: 20px; 
+}
+
+.hero h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #fff;
+    color: #1e90ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    transform: scale(1.05); 
+}

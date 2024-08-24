@@ -1,0 +1,33 @@
+#certifications {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.certification-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.certification-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.certification-item p {
+    font-size: 1rem;
+    color: #666;
+}

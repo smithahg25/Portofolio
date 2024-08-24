@@ -1,0 +1,39 @@
+#education {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.education-item .degree {
+    font-weight: bold;
+    color: #ff6347; 
+    text-align: center; 
+    display: block; 
+}
+
+.education-item .cgpa,
+.education-item .percentage {
+    font-weight: bold;
+    color: #1e90ff;
+}

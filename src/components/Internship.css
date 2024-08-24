@@ -1,0 +1,47 @@
+
+#internship {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#internship h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.internship-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.internship-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e90ff; 
+}
+
+.internship-item .duration {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.internship-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.internship-item ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+}
