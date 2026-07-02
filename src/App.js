@@ -1,34 +1,35 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
-import Education from './components/Education';
+import Internship from './components/Internship';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Internship from './components/Internship';
+import Certifications from './components/Certifications';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
-import Certifications from './components/Certifications';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/internship" element={<Internship />} />
-          <Route path="/Certifications" element={<Certifications />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
+    <div className="App">
+      <div className="bg-blobs">
+        <div className="blob blob-1"></div>
+        <div className="blob blob-2"></div>
+        <div className="blob blob-3"></div>
       </div>
-    </Router>
+      <Header />
+      <main className="page-content">
+        <About />
+        <Internship />
+        <Skills />
+        <Projects />
+        <Certifications />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

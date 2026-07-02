@@ -1,33 +1,49 @@
 #certifications {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #certifications h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .certification-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+    background: var(--bg-card);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .certification-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #1e90ff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
 .certification-item p {
-    font-size: 1rem;
-    color: #666;
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 500;
 }

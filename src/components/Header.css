@@ -1,83 +1,139 @@
-
-header {
-    background: linear-gradient(45deg, #1e90ff, #00ced1); 
-    color: #fff;
-    padding: 20px 10px; 
-    text-align: center;
-    position: relative;
+.main-header {
+    position: sticky;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background: rgba(6, 6, 8, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
 }
 
-nav {
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin: 0 auto; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-nav h1 {
-    margin: 0;
-    font-size: 2rem; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    font-weight: 700; 
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-nav ul {
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
     list-style: none;
-    margin: 10px 0 0; 
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    gap: 15px; 
 }
 
-nav ul li {
-    margin: 0; 
-}
-
-nav ul li a {
+.nav-links a {
+    color: var(--text-secondary);
     text-decoration: none;
-    color: #fff;
+    font-size: 0.95rem;
     font-weight: 500;
-    font-size: 1rem; 
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.2s ease;
 }
 
-nav ul li a:hover {
-    color: #f0f0f0; 
-    transform: scale(1.1); 
+.nav-links a:hover {
+    color: var(--text-primary);
 }
 
 .hero {
-    margin-top: 20px; 
-    padding: 20px; 
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
 }
 
-.hero h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 99px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.85rem;
     font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
 }
 
-.hero p {
-    font-size: 1.2rem; 
-    margin-bottom: 20px;
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
 }
 
-.cta {
-    background-color: #fff;
-    color: #1e90ff;
-    padding: 10px 20px;
+.typing-text {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-primary);
+    color: var(--bg-main);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.cta:hover {
-    background-color: #1e90ff;
-    color: #fff;
-    transform: scale(1.05); 
+.cta-button.outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.cta-button.outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .main-nav { flex-direction: column; gap: 1rem; }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-actions { flex-direction: column; }
 }
